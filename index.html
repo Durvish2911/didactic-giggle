@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            face recongnizitiion app
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body style="font-family: cursive; background-color: darkorange;">
+        <center>
+            <h1 class="btn btn-primary">face recongnizitiion app</h1>
+            <br>
+            <br>
+            <br>
+           <label class="mom">Mom</label>
+           <hr>
+           <label class="dad">Dad</label>
+           <hr>
+           <label class="me">Me</label>
+           <label>webcam view</label>
+        <div id="camera"></div>
+        <br>
+        <br>
+           <div id="result" ></div>
+           <br>
+           <br>
+           <button onclick="tae_snaPshot();" class="btn btn-info">Capture Image</button>
+           <br>
+           <br>
+           <button onclick="check()" class="btn btn-warning">Identify Image</button>
+           <br>
+           <br>
+           <p style="font-size: 22px;">Object <span id="image"></span></p>
+           <p style="font-size: 22px;">accuracy <span id="imaget"></span></p>
+
+        </center>
+        <script src="main.js"></script> 
+    </body>
+</html>
